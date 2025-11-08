@@ -7,29 +7,53 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="header">
-    <h1>👋 Hi, I'm Yog_GForge, an Indie Developer</h1>
-    <p class="tagline">I build simple, useful, and fun Chrome Extensions.</p>
-  </header>
+  <!-- Top Header with Logo and Name -->
+  <div class="top-header">
+    <img src="assets/logo.png" alt="YogGForge Logo" class="logo" />
+    <h1 class="site-name">YogGForge</h1>
+  </div>
 
-  <main class="projects">
-    <!-- task.mate -->
-    <section class="project-card">
-      <h2>📝 task.mate</h2>
-      <p>A Google Chrome plugin for managing your to-do list offline. Add, edit, reorder, and stay productive with ease.</p>
-      <div class="links">
-        <a href="https://yoggforge.github.io/task.mate/" target="_blank">🌐 About</a>
-        <a href="https://chromewebstore.google.com/detail/taskmate-to-do-list-tool/fkbbndiioogeaifjpdpfebbdoobpppep" target="_blank">🛒 Install</a>
+  <!-- Main Layout -->
+  <main class="main-container">
+    <!-- Left Side: About + Extensions -->
+    <section class="left-section">
+      <div class="about">
+        <h2>👋 Hi, I'm Yog_GForge</h2>
+        <p class="tagline">An Indie Developer who builds simple, useful, and fun Chrome Extensions.</p>
+      </div>
+
+      <div class="projects">
+        <!-- task.mate -->
+        <section class="project-card">
+          <h3>📝 task.mate</h3>
+          <p>A Google Chrome plugin for managing your to-do list offline. Add, edit, reorder, and stay productive with ease.</p>
+          <div class="links">
+            <a href="https://yoggforge.github.io/task.mate/" target="_blank">🌐 About</a>
+            <a href="https://chromewebstore.google.com/detail/taskmate-to-do-list-tool/fkbbndiioogeaifjpdpfebbdoobpppep" target="_blank">🛒 Install</a>
+          </div>
+        </section>
+
+        <!-- hue.mate -->
+        <section class="project-card">
+          <h3>🎨 hue.mate</h3>
+          <p>A Google Chrome plugin for picking colors from your screen and generating beautiful color palettes instantly.</p>
+          <div class="links">
+            <a href="https://yoggforge.github.io/hue.mate/" target="_blank">🌐 About</a>
+            <a href="https://chromewebstore.google.com/detail/huemate-color-picker-tool/moleclbjmgchhloknmdbooobjoddkkfi" target="_blank">🛒 Install</a>
+          </div>
+        </section>
       </div>
     </section>
 
-    <!-- hue.mate -->
-    <section class="project-card">
-      <h2>🎨 hue.mate</h2>
-      <p>A Google Chrome plugin for picking colors from your screen and generating beautiful color palettes instantly.</p>
-      <div class="links">
-        <a href="https://yoggforge.github.io/hue.mate/" target="_blank">🌐 About</a>
-        <a href="https://chromewebstore.google.com/detail/huemate-color-picker-tool/moleclbjmgchhloknmdbooobjoddkkfi" target="_blank">🛒 Install</a>
+    <!-- Right Side: Android App -->
+    <section class="right-section">
+      <div class="android-app">
+        <h2>📱 Stoic Lessons</h2>
+        <p>Stoic Lessons helps you go beyond just reading Stoic quotes — to truly understand and apply them in daily life. Explore curated Stoic quotes, lessons, and more.</p>
+        <div class="links">
+          <a href="#" target="_blank">🌐 Learn More</a>
+          <a href="#" target="_blank">📥 Download (Coming Soon)</a>
+        </div>
       </div>
     </section>
   </main>
