@@ -8,7 +8,7 @@ body {
   padding: 20px;
 }
 
-/* ===== TOP HEADER (Logo + Name) ===== */
+/* ===== TOP HEADER ===== */
 .top-header {
   display: flex;
   align-items: center;
@@ -31,22 +31,52 @@ body {
   color: #fff;
 }
 
-/* ===== MAIN LAYOUT ===== */
+/* ===== MAIN CONTAINER ===== */
 .main-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  text-align: left;
+  flex-direction: column;
+  gap: 50px;
 }
 
-/* ===== LEFT SECTION (About + Extensions) ===== */
-.left-section {
-  flex: 1 1 45%;
+/* ===== APP SECTION ===== */
+.app-section {
+  background: linear-gradient(135deg, #1a1a1a, #262626);
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 40px 25px;
+  box-shadow: 0 0 20px rgba(77, 121, 255, 0.15);
+  text-align: center;
+}
+
+.app-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.app-card p {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.app-card .links {
+  justify-content: center;
+}
+
+/* ===== EXTENSIONS SECTION ===== */
+.extensions-section {
+  background: #141414;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 40px 25px;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.08);
 }
 
 .about {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .about h2 {
@@ -60,31 +90,13 @@ body {
   color: #bbb;
 }
 
-/* ===== RIGHT SECTION (Android App) ===== */
-.right-section {
-  flex: 1 1 45%;
-  background: #1a1a1a;
-  border-radius: 14px;
-  padding: 25px;
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.05);
-}
-
-.right-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #f5f5f5;
-}
-
-.right-section p {
-  margin-bottom: 20px;
-  color: #ccc;
-}
-
 /* ===== PROJECT CARDS ===== */
 .projects {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -138,16 +150,14 @@ body {
   padding-top: 15px;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 850px) {
-  .main-container {
-    flex-direction: column;
-    align-items: center;
+  .projects {
+    gap: 20px;
   }
 
-  .left-section, .right-section {
-    flex: 1 1 100%;
-    max-width: 700px;
+  .app-section, .extensions-section {
+    padding: 25px 15px;
   }
 
   .links {
