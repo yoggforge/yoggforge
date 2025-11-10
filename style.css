@@ -11,11 +11,14 @@ body {
 /* ===== TOP HEADER ===== */
 .top-header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* helps on mobile */
-  text-align: center;
+  justify-content: center; /* ✅ centers horizontally */
+  gap: 15px;
+  border-bottom: 2px solid #1f1f1f;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
+
 
 
 .logo {
